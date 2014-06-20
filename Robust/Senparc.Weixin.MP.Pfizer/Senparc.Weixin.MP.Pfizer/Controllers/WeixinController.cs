@@ -106,5 +106,35 @@ namespace Senparc.Weixin.MP.Pfizer.Controllers
             }
         }
 
+        /// <summary>
+        /// 最简化的处理流程
+        /// </summary>
+        [HttpPost]
+        [ActionName("MiniPost")]
+        public ActionResult MiniPost(string signature, string timestamp, string nonce, string echostr)
+        {
+            if (!CheckSignature.Check(signature, timestamp, nonce, Token))
+            {
+                //return Content("参数错误！");//v0.7-
+                return new WeixinResult("参数错误！");//v0.8+
+            }
+
+            var messageHandler = new CustomMessageHandler(Request.InputStream, 10);
+
+            messageHandler.Execute();//执行微信处理过程
+
+            //return Content(messageHandler.ResponseDocument.ToString());//v0.7-
+            //return new FixWeixinBugWeixinResult(messageHandler);//v0.8+
+            return new WeixinResult(messageHandler);//v0.8+
+        }
+
+        /*
+         * v0.3.0之前的原始Post方法见：WeixinController_OldPost.cs
+         * 
+         * 注意：虽然这里提倡使用CustomerMessageHandler的方法，但是MessageHandler基类最终还是基于OldPost的判断逻辑，
+         * 因此如果需要深入了解Senparc.Weixin.MP内部处理消息的机制，可以查看WeixinController_OldPost.cs中的OldPost方法。
+         * 目前为止OldPost依然有效，依然可用于生产。
+         */
+
     }
 }
