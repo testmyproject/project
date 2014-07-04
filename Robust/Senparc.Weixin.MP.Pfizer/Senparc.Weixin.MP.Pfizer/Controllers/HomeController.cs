@@ -10,7 +10,7 @@ namespace Senparc.Weixin.MP.Pfizer.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
+            ViewBag.Message = "这是为Pfizer中国微信公众平台服务的后台网站.";
 
             return View();
         }

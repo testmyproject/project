@@ -12,7 +12,8 @@
         <header>
             <div class="content-wrapper">
                 <div class="float-left">
-                    <p class="site-title">@Html.ActionLink("your logo here", "Index", "Home")</p>
+                    <!--p class="site-title">@Html.ActionLink("your logo here", "Index", "Home")</p-->
+                    <img src="~/Images/pfizer.gif"  alt="辉瑞" />
                 </div>
                 <div class="float-right">
                     <section id="login">
@@ -20,9 +21,10 @@
                     </section>
                     <nav>
                         <ul id="menu">
-                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                            <li>@Html.ActionLink("About", "About", "Home")</li>
-                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                            <li>@Html.ActionLink("主页", "Index", "Home")</li>
+                            <li>@Html.ActionLink("用户", "Index", "WXUsers")</li>
+                            <li>@Html.ActionLink("关于", "About", "Home")</li>
+                            <li>@Html.ActionLink("联系", "Contact", "Home")</li>
                         </ul>
                     </nav>
                 </div>
@@ -37,7 +39,7 @@
         <footer>
             <div class="content-wrapper">
                 <div class="float-left">
-                    <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application</p>
+                    <p>&copy; @DateTime.Now.Year - 艾美仕市场调查咨询有限公司</p>
                 </div>
             </div>
         </footer>
@@ -45,4 +47,14 @@
         @Scripts.Render("~/bundles/jquery")
         @RenderSection("scripts", required: false)
     </body>
+    <script>
+        $('#deleteLink').click(function () {
+            var x = confirm("是否从数据库中删除？");
+            if (x == true) {
+                //do something            
+            } else {
+                return false;
+            }
+        });
+ </script>
 </html>
