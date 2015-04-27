@@ -1,0 +1,4 @@
+{if(!is_empty(LANGUAGECHANGER),"<div class='tools' id='languageselect-wrapper'>"+LANGUAGECHANGER+"</div>","")}
+{if(!is_empty(SURVEYDESCRIPTION),"<div class='text' id='surveydescription'>"+SURVEYDESCRIPTION+"</div>","")}
+{if(!is_empty(PERCENTCOMPLETE),"<div class='tools'>"+PERCENTCOMPLETE+"</div>","")}
+

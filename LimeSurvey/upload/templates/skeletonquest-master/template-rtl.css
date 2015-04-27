@@ -1,0 +1,25 @@
+/* This file is part of Lime Survey Template :a free template
+    you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This template is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+body{direction:rtl;}
+blockquote {border-left: 0 none;border-right: 1px solid #ddd; }
+ol, ul{ margin-left: 0;margin-right: 30px; }
+ol ol, ol ul { margin: 4px 30px 5px 0;}
+.ie6 .wrapper,.ie6 #content,.ie7 .wrapper,.ie7 #content{text-align:right;}
+#head .sitename{float:right}
+#head .tools{float:left;}
+.question-help img{margin:1px -23px 5px 0;}
+.progress-value{float:right;text-align:left;}
+.progress-range{right:0;text-align:left}

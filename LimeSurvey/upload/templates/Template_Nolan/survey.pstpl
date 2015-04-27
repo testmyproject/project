@@ -1,0 +1,10 @@
+<div id="welcome"  style="background-color:white;filter:alpha(Opacity=80);-moz-opacity:0.8;opacity: 0.8; color:black;">
+    <!--span class="survey-name">{SURVEYNAME}</span-->
+	<img src="{TEMPLATEURL}survyanner.png" style="width:100%"> </img>
+	<!--p class="survey-description" style="font-size:14px;"> {SURVEYDESCRIPTION}</p-->
+	  {PERCENTCOMPLETE}<br/>
+      {LANGUAGECHANGER}
+</div>
+
+
+

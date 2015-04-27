@@ -1,0 +1,3 @@
+	<p class="navigator">{NAVIGATOR}</p>
+	{if(!is_empty(SAVE) or !is_empty(CLEARALL),"<ul class='tools'>","")}
+	{if(!is_empty(SAVE) or !is_empty(CLEARALL),"</ul>","")}

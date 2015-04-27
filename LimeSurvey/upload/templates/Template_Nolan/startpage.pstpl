@@ -1,0 +1,42 @@
+<html style="height:100%">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<title>
+			{SURVEYNAME}
+		</title>
+		<!--meta name="generator" content="LimeSurvey http://www.limesurvey.org" /-->
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+		<!-- The following line includes template.css and if an RTL-language is used template-rtl.css -->
+        {TEMPLATECSS}
+		<link rel="stylesheet" type="text/css" href="{TEMPLATEURL}buttoncss2.css" />
+<!--[if lte IE 6]>
+    	<link rel="stylesheet" type="text/css" href="{TEMPLATEURL}ie_fix_6.css" />
+<![endif]-->
+<!--[if IE 7]>
+    		<link rel="stylesheet" type="text/css" href="{TEMPLATEURL}ie_fix_7.css" />
+			
+<![endif]-->
+<!--[if IE 8]>
+    		<link rel="stylesheet" type="text/css" href="{TEMPLATEURL}ie_fix_8.css" />
+<![endif]-->
+
+    <!-- The following CSS hides visual elements of the progress bar from screen readers. -->
+    <style type="text/css" media="aural tty">
+        progress-graph .zero, progress-graph .graph, progress-graph .cent { display: none; }
+    </style>
+		
+	<script type="text/javascript" src="{TEMPLATEURL}template.js"></script>
+	<script>
+		document.addEventListener('WeixinJSBridgeReady', function onBridgeReady()
+		{
+			 WeixinJSBridge.call('hideOptionMenu');
+		});
+	</script>
+    <link rel="shortcut icon" href="{TEMPLATEURL}favicon.ico" />
+    {GOOGLE_ANALYTICS_JAVASCRIPT}
+	</head>
+        <body class="lang-{SURVEYLANGUAGE} {SURVEYFORMAT}" style="background: #E6EAE9">
+            <div class="outerframe">
+                <br/>
+                <div id="container">

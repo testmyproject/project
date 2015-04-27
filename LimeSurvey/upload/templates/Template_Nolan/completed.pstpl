@@ -1,0 +1,21 @@
+<br />
+
+<div id="welcome"  style="background-color:white;filter:alpha(Opacity=80);-moz-opacity:0.8;opacity: 0.8; color:black;">
+    <span class="survey-name">感谢您的参与</span>
+	<p class="survey-description" style="font-size:14px;">您的意见对我们至关重要!</p>
+	<p class="survey-description" style="font-size:14px;">抽奖结果将于5点公布!</p>
+	  <br/>
+      
+</div>
+
+<table align="center" class="navigator">
+	<tbody>
+		<tr>
+			<td class="submit-buttons">
+				<input class="submit" type="button" onclick="WeixinJSBridge.call('closeWindow');" value="关闭" style="margin-bottom:20px;"/>
+			</td> 
+		</tr>
+	</tbody>
+</table>
+
+

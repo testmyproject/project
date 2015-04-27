@@ -1,0 +1,8 @@
+{CHECKJAVASCRIPT}
+{if(!is_empty(LANGUAGECHANGER),"<div class='tools' id='languageselect-wrapper'>"+LANGUAGECHANGER+"</div>","")}
+<div id="welcome">
+	{if(!is_empty(SURVEYDESCRIPTION),"<div class='text' id='surveydescription'>"+SURVEYDESCRIPTION+"</div>","")}
+	<div id='surveywelcome' class="text">{WELCOME}
+	{if(!is_empty(THEREAREXQUESTIONS),"<p id='therearexquestions' class='text'>"+THEREAREXQUESTIONS+"</p>","")}
+	</div>
+</div>
